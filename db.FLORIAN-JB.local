@@ -1,0 +1,17 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL    604800
+@       IN      SOA     florian-jb.local. root.florian-jb.local. (
+                              4         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS     server.florian-jb.local.
+server  IN      A      10.203.8.35
+imap	IN      A      10.203.8.136
+pop	IN      A      10.203.8.137
+smtp	IN      A      10.203.8.138
+
